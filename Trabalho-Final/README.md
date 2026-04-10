@@ -12,7 +12,8 @@ Para que o sistema funcione corretamente, atente-se aos seguintes pontos:
 
 1. **Webcam Obrigatória:** O sistema utiliza a câmera em tempo real para capturar a imagem do gabarito. Certifique-se de que sua webcam está conectada e funcional no Ubuntu.
 2. **Uso do Gabarito Oficial:** O algoritmo está calibrado especificamente para o modelo gerado pelo próprio código. Não utilize folhas de respostas de outros modelos.
-3. **Gerando a Folha de Respostas:** - Antes de iniciar a correção, execute a célula específica do notebook que contém o método de geração de gabarito.
+3. **Gerando a Folha de Respostas:** 
+   - Antes de iniciar a correção, execute a célula específica do notebook que contém o método de geração de gabarito.
    - O arquivo será salvo automaticamente na pasta `data/images` do projeto.
    - Imprima ou exiba este arquivo gerado para que a webcam possa realizar a leitura.
 
