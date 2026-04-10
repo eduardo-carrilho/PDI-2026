@@ -50,7 +50,7 @@ pip install jupyter ipython gdown
 
 Após clonar o repositório e configurar o ambiente, acessa o diretório do projeto e siga os passos abaixo:
 
-1. Ative o ambiente virtual:
+1. Caso o ambiente virtual não esteja ativado, ative-o:
 ```bash
    conda activate CorretorGabarito
 ```
