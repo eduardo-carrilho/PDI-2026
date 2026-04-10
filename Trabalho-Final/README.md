@@ -59,7 +59,7 @@ Após clonar o repositório e configurar o ambiente, acessa o diretório do proj
 ```bash
    jupyter notebook
 ```
-3. No navegador, abra o arquivo principal (extensão .ipynb) presente na pasta.
+3. No navegador, acesse o diretório src e abra o arquivo principal chamado spv.ipynb presente na pasta.
 
 4. Fluxo de Processamento do Código:
     - O código realiza o pré-processamento (escala de cinza e binarização).
