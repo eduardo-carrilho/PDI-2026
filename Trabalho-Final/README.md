@@ -6,6 +6,18 @@ Todo o material necessário (código, imagens de teste e documentação) está c
 
 ---
 
+## Pré-requisitos de Hardware e Preparação do Gabarito
+
+Para que o sistema funcione corretamente, atente-se aos seguintes pontos:
+
+1. **Webcam Obrigatória:** O sistema utiliza a câmera em tempo real para capturar a imagem do gabarito. Certifique-se de que sua webcam está conectada e funcional no Ubuntu.
+2. **Uso do Gabarito Oficial:** O algoritmo está calibrado especificamente para o modelo gerado pelo próprio código. Não utilize folhas de respostas de outros modelos.
+3. **Gerando a Folha de Respostas:** - Antes de iniciar a correção, execute a célula específica do notebook que contém o método de geração de gabarito.
+   - O arquivo será salvo automaticamente na pasta `data/images` do projeto.
+   - Imprima ou exiba este arquivo gerado para que a webcam possa realizar a leitura.
+
+---
+
 ## 1. Configuração do Ambiente e Download (Passo a Passo)
 
 Siga estas instruções para preparar um ambiente Linux (Ubuntu) do zero e obter os arquivos do projeto.
@@ -70,7 +82,7 @@ Após clonar o repositório e configurar o ambiente, acessa o diretório do proj
 
 ---
 
-### 2.1 Como interagir com o Jupyter Notebook
+### 2 Como interagir com o Jupyter Notebook
 
 Uma vez com o arquivo aberto no navegador, siga estas instruções:
 
@@ -80,16 +92,6 @@ Uma vez com o arquivo aberto no navegador, siga estas instruções:
    - O símbolo `[*]` ao lado da célula indica que o processamento está em andamento.
    - O símbolo `[número]` (ex: `[1]`) indica que a execução daquela célula foi concluída.
 4. **Visualização:** Os resultados das imagens processadas e a nota final aparecerão logo abaixo das respectivas células de código.
-
-### 2.2 Pré-requisitos de Hardware e Preparação do Gabarito
-
-Para que o sistema funcione corretamente, atente-se aos seguintes pontos:
-
-1. **Webcam Obrigatória:** O sistema utiliza a câmera em tempo real para capturar a imagem do gabarito. Certifique-se de que sua webcam está conectada e funcional no Ubuntu.
-2. **Uso do Gabarito Oficial:** O algoritmo está calibrado especificamente para o modelo gerado pelo próprio código. Não utilize folhas de respostas de outros modelos.
-3. **Gerando a Folha de Respostas:** - Antes de iniciar a correção, execute a célula específica do notebook que contém o método de geração de gabarito.
-   - O arquivo será salvo automaticamente na pasta `data/images` do projeto.
-   - Imprima ou exiba este arquivo gerado para que a webcam possa realizar a leitura.
 
 ## 3. Requisitos de Software Adicionais (Opcional)
 Para visualizar arquivos auxiliares ou editar scripts fora do ambiente Jupyter:
