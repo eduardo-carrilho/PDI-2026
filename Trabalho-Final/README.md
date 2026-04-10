@@ -13,8 +13,8 @@ Siga estas instruções para preparar um ambiente Linux (Ubuntu) do zero e obter
 ### 1.1 Preparação e Download do Projeto
 Abra o terminal no diretório que você deseja salvar e execute os comandos para criar a pasta e clonar o repositório:
 ```bash
-mkdir pdi2026
-cd pdi2026
+mkdir corretor-gabarito
+cd corretor-gabarito
 git clone https://github.com/eduardo-carrilho/PDI-2026.git
 cd PDI-2026/Trabalho-Final
 ```
@@ -29,16 +29,16 @@ bash Miniconda3-latest-Linux-x86_64.sh
 * Atenção: Durante a instalação, digite "yes" para os termos de licença e pressione ENTER para confirmar o local padrão. Quando perguntado sobre o "conda init", selecione "yes".
 * Após terminar: Feche o terminal e abra um novo para que as alterações tenham efeito.
 
-### 1.3 Configuração do Ambiente Virtual (PDI26)
+### 1.3 Configuração do Ambiente Virtual (CorretorGabarito)
 Crie e configure o ambiente da disciplina:
 ```bash
 conda config --set auto_activate_base false
-conda create --name PDI26 python -y
-conda activate PDI26
+conda create --name CorretorGabarito python -y
+conda activate CorretorGabarito
 ```
 
 ### 1.4 Instalação das Bibliotecas Necessárias
-Com o prefixo (PDI26) ativo, instale as dependências:
+Com o prefixo (CorretorGabarito) ativo, instale as dependências:
 ```bash
 pip install opencv-python opencv-contrib-python pillow scikit-image
 pip install numpy matplotlib scikit-learn
@@ -48,25 +48,20 @@ pip install jupyter ipython gdown
 
 ## 2. Procedimento de Execução
 
-Após clonar o repositório e configurar o ambiente, siga os passos abaixo:
+Após clonar o repositório e configurar o ambiente, acessa o diretório do projeto e siga os passos abaixo:
 
-1. Acesse a pasta do trabalho final:
+1. Ative o ambiente virtual:
 ```bash
-   cd ~/Documents/pdi2026/PDI-2026/Trabalho-Final
+   conda activate CorretorGabarito
 ```
 
-2. Ative o ambiente virtual:
-```bash
-   conda activate PDI26
-```
-
-3. Inicie o Jupyter Notebook:
+2. Inicie o Jupyter Notebook:
 ```bash
    jupyter notebook
 ```
-4. No navegador, abra o arquivo principal (extensão .ipynb) presente na pasta.
+3. No navegador, abra o arquivo principal (extensão .ipynb) presente na pasta.
 
-5. Fluxo de Processamento do Código:
+4. Fluxo de Processamento do Código:
     - O código realiza o pré-processamento (escala de cinza e binarização).
     - Localiza as âncoras de referência para corrigir eventuais rotações da imagem.
     - Segmenta a imagem nas coordenadas de cada questão do gabarito.
