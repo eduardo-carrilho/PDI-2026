@@ -11,9 +11,8 @@ Todo o material necessário (código, imagens de teste e documentação) está c
 Siga estas instruções para preparar um ambiente Linux (Ubuntu) do zero e obter os arquivos do projeto.
 
 ### 1.1 Preparação e Download do Projeto
-Abra o terminal e execute os comandos para criar a pasta e clonar o repositório:
+Abra o terminal no diretório que você deseja salvar e execute os comandos para criar a pasta e clonar o repositório:
 ```bash
-cd ~/Documents
 mkdir pdi2026
 cd pdi2026
 git clone https://github.com/eduardo-carrilho/PDI-2026.git
