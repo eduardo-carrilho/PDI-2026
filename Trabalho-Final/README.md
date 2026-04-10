@@ -75,7 +75,7 @@ Após clonar o repositório e configurar o ambiente, acessa o diretório do proj
 Uma vez com o arquivo aberto no navegador, siga estas instruções:
 
 1. **Execução Sequencial:** Clique na primeira célula de código e pressione **Shift + Enter** para executá-la e avançar para a próxima.
-2. **Execução Total:** Para rodar todo o projeto de uma vez, vá no menu superior em **Cell** > **Run All** (ou **Célula** > **Executar Tudo**).
+2. **Execução Total:** Para rodar todo o projeto de uma vez, vá no menu superior em **Run** > **Run All Cells**.
 3. **Indicadores de Status:**
    - O símbolo `[*]` ao lado da célula indica que o processamento está em andamento.
    - O símbolo `[número]` (ex: `[1]`) indica que a execução daquela célula foi concluída.
